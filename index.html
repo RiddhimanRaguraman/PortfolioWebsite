@@ -8,30 +8,30 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="bg-app text-neutral-200 antialiased theme">
-    <a href="#content" class="sr-only focus:not-sr-only focus-ring absolute left-4 top-4 z-[60] rounded-md bg-white/10 px-3 py-1 text-sm backdrop-blur">
+  <body class="bg-app text-lg text-neutral-200 antialiased theme">
+    <a href="#content" class="sr-only focus:not-sr-only focus-ring absolute left-4 top-4 z-[60] rounded-md bg-white/10 px-3 py-1 text-base backdrop-blur">
       Skip to content
     </a>
 
     <header class="navbar">
-      <nav class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3" aria-label="Primary">
+      <nav class="mx-auto flex max-w-[95%] items-center justify-between px-4 py-3" aria-label="Primary">
         <div class="flex items-center gap-3">
           <span aria-hidden="true" class="inline-flex h-8 w-8 items-center justify-center rounded-lg bg-white/10 text-accent">RR</span>
-          <a href="#home" class="text-sm font-semibold tracking-wide text-white hover:text-accent-400 focus-ring">Riddhiman Raguraman</a>
-          <span class="hidden text-sm text-neutral-400 md:inline">— Game Programmer</span>
+          <a href="#home" class="text-base font-semibold tracking-wide text-white hover:text-accent-400 focus-ring">Riddhiman Raguraman</a>
+          <span class="hidden text-base text-neutral-400 md:inline">— Game Programmer</span>
         </div>
         <div class="flex items-center gap-3">
           <button id="menuToggle" aria-controls="mobileMenu" aria-expanded="false" class="btn btn-ghost focus-ring sm:hidden" type="button">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
           </button>
-          <a href="#about" class="hidden text-sm text-neutral-300 hover:text-white focus-ring sm:inline">About</a>
-          <a href="#skills" class="hidden text-sm text-neutral-300 hover:text-white focus-ring sm:inline">Skills</a>
-          <a href="#experience" class="hidden text-sm text-neutral-300 hover:text-white focus-ring md:inline">Experience</a>
-          <a href="#projects" class="hidden text-sm text-neutral-300 hover:text-white focus-ring sm:inline">Projects</a>
-          <a href="#education" class="hidden text-sm text-neutral-300 hover:text-white focus-ring md:inline">Education</a>
-          <a href="#awards" class="hidden text-sm text-neutral-300 hover:text-white focus-ring lg:inline">Awards</a>
-          <a href="#contact" class="hidden text-sm text-neutral-300 hover:text-white focus-ring sm:inline">Contact</a>
-          <a href="assets/resume.pdf" download class="ml-2 btn btn-ghost gap-2 focus-ring hidden md:inline-flex">
+          <a href="#about" class="hidden text-base text-neutral-300 hover:text-white focus-ring sm:inline">About</a>
+          <a href="#skills" class="hidden text-base text-neutral-300 hover:text-white focus-ring sm:inline">Skills</a>
+          <a href="#experience" class="hidden text-base text-neutral-300 hover:text-white focus-ring md:inline">Experience</a>
+          <a href="#projects" class="hidden text-base text-neutral-300 hover:text-white focus-ring sm:inline">Projects</a>
+          <a href="#education" class="hidden text-base text-neutral-300 hover:text-white focus-ring md:inline">Education</a>
+          <a href="#awards" class="hidden text-base text-neutral-300 hover:text-white focus-ring lg:inline">Awards</a>
+          <a href="#contact" class="hidden text-base text-neutral-300 hover:text-white focus-ring sm:inline">Contact</a>
+          <a href="assets/resume.pdf" download class="ml-2 btn btn-ghost gap-2 focus-ring hidden md:inline-flex text-base">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 16l4-4m-4 4l-4-4m4 4V3m0 13v5m8 0H4"/></svg>
             Download Resume
           </a>
@@ -39,7 +39,7 @@
       </nav>
     </header>
     <div id="mobileMenu" class="sm:hidden mobile-menu left-0 right-0 top-14 border-t border-white/10 bg-base-900/95 backdrop-blur">
-      <div class="mx-auto max-w-7xl px-4 py-3">
+      <div class="mx-auto max-w-[95%] px-4 py-3">
         <div class="grid gap-2">
           <a href="#about" class="btn btn-ghost w-full justify-start focus-ring">About</a>
           <a href="#skills" class="btn btn-ghost w-full justify-start focus-ring">Skills</a>
@@ -53,7 +53,7 @@
       </div>
     </div>
 
-    <main id="content" class="mx-auto max-w-7xl px-4 pt-28">
+    <main id="content" class="mx-auto max-w-[95%] px-4 pt-28">
       <section id="home" class="relative grid grid-cols-1 items-center gap-10 pb-16 md:grid-cols-2">
         <div>
           <h1 class="text-4xl font-semibold tracking-tight text-white md:text-5xl">
@@ -68,7 +68,7 @@
             <a href="#contact" class="btn btn-primary font-medium focus-ring">Contact</a>
             <a href="assets/resume.pdf" download class="btn btn-ghost focus-ring">Download Resume</a>
           </div>
-          <div class="mt-6 flex flex-wrap items-center gap-4 text-sm text-neutral-300">
+          <div class="mt-6 flex flex-wrap items-center gap-4 text-base text-neutral-300">
             <div class="flex items-center gap-2">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-neutral-400" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 119.5 9 2.5 2.5 0 0112 11.5z"/></svg>
               Chicago, Illinois
@@ -83,7 +83,7 @@
             </a>
           </div>
         </div>
-        <figure class="relative mx-auto w-full max-w-sm">
+        <figure class="relative mx-auto hidden w-3/4 max-w-sm md:block md:w-4/5 lg:w-full lg:max-w-md xl:max-w-lg">
           <!-- TODO: Replace with your photo at /assets/profile.jpg -->
           <img id="profilePhoto" src="assets/profile.jpg" alt="Profile photo of Riddhiman Raguraman" class="hidden aspect-square w-full photo object-cover" />
           <div id="photoFallback" class="flex aspect-square w-full items-center justify-center photo bg-white/5 text-5xl font-semibold text-white">
@@ -95,7 +95,7 @@
 
       <section id="about" aria-labelledby="about-heading" class="pb-6">
         <h2 id="about-heading">About</h2>
-        <div class="mt-3 card">
+        <div class="mt-3">
           <p class="text-neutral-300">
             Passionate game programmer with experience building gameplay systems, tools, and performance‑minded features across C++, Unity, and Unreal. Focused on robust engineering, clean architecture, and compelling player experiences.
           </p>
@@ -108,12 +108,12 @@
           <li class="relative card">
             <div class="flex flex-wrap items-center justify-between gap-3">
               <div>
-                <h3 class="text-sm font-semibold text-white">Game Developer Intern — Geonix Logix</h3>
-                <p class="text-xs text-neutral-400">May 2023 – Sep 2023</p>
+                <h3 class="text-base font-semibold text-white">Game Developer Intern — Geonix Logix</h3>
+                <p class="text-sm text-neutral-400">May 2023 – Sep 2023</p>
               </div>
-              <span class="text-xs text-neutral-300">Madurai, India</span>
+              <span class="text-sm text-neutral-300">Madurai, India</span>
             </div>
-            <p class="mt-3 text-sm text-neutral-300">
+            <p class="mt-3 text-base text-neutral-300">
               Worked on a 2D educational game “Clouds Rescue” to make learning fun for 10th‑grade students. Developed gameplay systems, level design, and interaction code end‑to‑end.
             </p>
           </li>
@@ -127,8 +127,8 @@
         </div>
         <div class="mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           <article class="group card card-hover">
-            <h3 class="text-sm font-semibold text-white">Game Engine Development (C++ / DirectX11)</h3>
-            <p class="mt-2 text-sm text-neutral-300">Built core systems: math (vector/matrix/quaternion with SIMD), file I/O, object/tree data structures, DirectX‑based graphics, frustum culling, converters from GLTF to runtime format.</p>
+            <h3 class="text-base font-semibold text-white">Game Engine Development (C++ / DirectX11)</h3>
+            <p class="mt-2 text-base text-neutral-300">Built core systems: math (vector/matrix/quaternion with SIMD), file I/O, object/tree data structures, DirectX‑based graphics, frustum culling, converters from GLTF to runtime format.</p>
             <div class="mt-3 flex flex-wrap gap-2">
               <span class="pill">C++</span>
               <span class="pill">DirectX11</span>
@@ -136,8 +136,8 @@
             </div>
           </article>
           <article class="group card card-hover">
-            <h3 class="text-sm font-semibold text-white">Clouds Rescue (Unity 2D)</h3>
-            <p class="mt-2 text-sm text-neutral-300">Educational 2D mobile game combining a challenging storyline with math‑based levels. Implemented gameplay mechanics and interactive characters.</p>
+            <h3 class="text-base font-semibold text-white">Clouds Rescue (Unity 2D)</h3>
+            <p class="mt-2 text-base text-neutral-300">Educational 2D mobile game combining a challenging storyline with math‑based levels. Implemented gameplay mechanics and interactive characters.</p>
             <div class="mt-3 flex flex-wrap gap-2">
               <span class="pill">Unity 2D</span>
               <span class="pill">C#</span>
@@ -145,8 +145,8 @@
             </div>
           </article>
           <article class="group card card-hover">
-            <h3 class="text-sm font-semibold text-white">Custom Malloc & Free (Windows C++)</h3>
-            <p class="mt-2 text-sm text-neutral-300">Designed an optimized memory manager with efficient allocation/deallocation for performance‑critical apps; 2× faster than MSVC’s default for target scenarios.</p>
+            <h3 class="text-base font-semibold text-white">Custom Malloc & Free (Windows C++)</h3>
+            <p class="mt-2 text-base text-neutral-300">Designed an optimized memory manager with efficient allocation/deallocation for performance‑critical apps; 2× faster than MSVC’s default for target scenarios.</p>
             <div class="mt-3 flex flex-wrap gap-2">
               <span class="pill">C++</span>
               <span class="pill">Windows</span>
@@ -154,8 +154,8 @@
             </div>
           </article>
           <article class="group card card-hover">
-            <h3 class="text-sm font-semibold text-white">Derelict (Unity 3D RPG)</h3>
-            <p class="mt-2 text-sm text-neutral-300">RPG with unique gameplay; custom asset creation, mechanics in C#, character integration using Blender.</p>
+            <h3 class="text-base font-semibold text-white">Derelict (Unity 3D RPG)</h3>
+            <p class="mt-2 text-base text-neutral-300">RPG with unique gameplay; custom asset creation, mechanics in C#, character integration using Blender.</p>
             <div class="mt-3 flex flex-wrap gap-2">
               <span class="pill">Unity 3D</span>
               <span class="pill">C#</span>
@@ -163,8 +163,8 @@
             </div>
           </article>
           <article class="group card card-hover">
-            <h3 class="text-sm font-semibold text-white">Telephone Billing System (DOS‑Box)</h3>
-            <p class="mt-2 text-sm text-neutral-300">C++ DOS‑based app integrated with Oracle DB via Pro*C, demonstrating legacy compiler workflows and data integration.</p>
+            <h3 class="text-base font-semibold text-white">Telephone Billing System (DOS‑Box)</h3>
+            <p class="mt-2 text-base text-neutral-300">C++ DOS‑based app integrated with Oracle DB via Pro*C, demonstrating legacy compiler workflows and data integration.</p>
             <div class="mt-3 flex flex-wrap gap-2">
               <span class="pill">Oracle</span>
               <span class="pill">Pro*C</span>
@@ -178,8 +178,8 @@
         <h2 id="skills-heading">Skills</h2>
         <div class="mt-4 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           <article class="card">
-            <h3 class="text-sm font-semibold text-white">C++</h3>
-            <p class="mt-2 text-sm text-neutral-300">8 years knowledge including STL, design patterns, algorithms, and SIMD intrinsics.</p>
+            <h3 class="text-base font-semibold text-white">C++</h3>
+            <p class="mt-2 text-base text-neutral-300">8 years knowledge including STL, design patterns, algorithms, and SIMD intrinsics.</p>
             <div class="mt-3 flex flex-wrap gap-2">
               <span class="pill">STL</span>
               <span class="pill">SIMD</span>
@@ -187,24 +187,24 @@
             </div>
           </article>
           <article class="card">
-            <h3 class="text-sm font-semibold text-white">Unreal Engine</h3>
-            <p class="mt-2 text-sm text-neutral-300">Blueprints coding, level design, materials, animation, sound, arch‑viz, VFX, VR.</p>
+            <h3 class="text-base font-semibold text-white">Unreal Engine</h3>
+            <p class="mt-2 text-base text-neutral-300">Blueprints coding, level design, materials, animation, sound, arch‑viz, VFX, VR.</p>
           </article>
           <article class="card">
-            <h3 class="text-sm font-semibold text-white">Unity</h3>
-            <p class="mt-2 text-sm text-neutral-300">4 years with asset management and C# gameplay; deployment knowledge.</p>
+            <h3 class="text-base font-semibold text-white">Unity</h3>
+            <p class="mt-2 text-base text-neutral-300">4 years with asset management and C# gameplay; deployment knowledge.</p>
           </article>
           <article class="card">
-            <h3 class="text-sm font-semibold text-white">Full‑Stack</h3>
-            <p class="mt-2 text-sm text-neutral-300">HTML, CSS, JavaScript, PHP, XML, Node.js; Oracle DB, MySQL, MariaDB; basics in Django, MongoDB.</p>
+            <h3 class="text-base font-semibold text-white">Full‑Stack</h3>
+            <p class="mt-2 text-base text-neutral-300">HTML, CSS, JavaScript, PHP, XML, Node.js; Oracle DB, MySQL, MariaDB; basics in Django, MongoDB.</p>
           </article>
           <article class="card">
-            <h3 class="text-sm font-semibold text-white">Other Languages</h3>
-            <p class="mt-2 text-sm text-neutral-300">C, C#, Java, Python, Assembly, Bash.</p>
+            <h3 class="text-base font-semibold text-white">Other Languages</h3>
+            <p class="mt-2 text-base text-neutral-300">C, C#, Java, Python, Assembly, Bash.</p>
           </article>
           <article class="card">
-            <h3 class="text-sm font-semibold text-white">Databases & DevOps</h3>
-            <p class="mt-2 text-sm text-neutral-300">Oracle DB, MySQL, MariaDB, MongoDB, GraphQL, Firebase; Linux, Bash, PowerShell; MAKE files.</p>
+            <h3 class="text-base font-semibold text-white">Databases & DevOps</h3>
+            <p class="mt-2 text-base text-neutral-300">Oracle DB, MySQL, MariaDB, MongoDB, GraphQL, Firebase; Linux, Bash, PowerShell; MAKE files.</p>
           </article>
         </div>
       </section>
@@ -213,15 +213,15 @@
         <h2 id="education-heading">Education</h2>
         <div class="mt-4 grid gap-4 md:grid-cols-2">
           <article class="card">
-            <h3 class="text-sm font-semibold text-white">MS in Game Programming — DePaul University</h3>
+            <h3 class="text-base font-semibold text-white">MS in Game Programming — DePaul University</h3>
             <p class="mt-2 text-sm text-neutral-300">09/2024 – present, Chicago, IL. CGPA: 2.92 / 4.</p>
           </article>
           <article class="card">
-            <h3 class="text-sm font-semibold text-white">B.Tech Computer Science — VIT Chennai</h3>
+            <h3 class="text-base font-semibold text-white">B.Tech Computer Science — VIT Chennai</h3>
             <p class="mt-2 text-sm text-neutral-300">2020 – 2024, Chennai, India. CGPA: 8.10 / 10 (3.24 / 4).</p>
           </article>
           <article class="card md:col-span-2">
-            <h3 class="text-sm font-semibold text-white">12th Grade — Velammal Vidyalaya</h3>
+            <h3 class="text-base font-semibold text-white">12th Grade — Velammal Vidyalaya</h3>
             <p class="mt-2 text-sm text-neutral-300">2020, Chennai, India. Score: 91%.</p>
           </article>
         </div>
@@ -231,19 +231,19 @@
         <h2 id="awards-heading">Academic Achievements & Courses</h2>
         <div class="mt-4 grid gap-4 md:grid-cols-2">
           <article class="card">
-            <h3 class="text-sm font-semibold text-white">Game‑a‑Thon — VIT Chennai</h3>
+            <h3 class="text-base font-semibold text-white">Game‑a‑Thon — VIT Chennai</h3>
             <p class="mt-2 text-sm text-neutral-300">Secured first place in a 6‑hour game development competition; created a 2D platformer.</p>
           </article>
           <article class="card">
-            <h3 class="text-sm font-semibold text-white">IEEE YESIST12 2023 — NMIT Bengaluru</h3>
+            <h3 class="text-base font-semibold text-white">IEEE YESIST12 2023 — NMIT Bengaluru</h3>
             <p class="mt-2 text-sm text-neutral-300">Awarded BEST PROJECT for “IoT‑Based Agricultural Drones for Effective Crop Management—5G and Beyond”.</p>
           </article>
           <article class="card">
-            <h3 class="text-sm font-semibold text-white">ICCSST 2023 — Christ University</h3>
+            <h3 class="text-base font-semibold text-white">ICCSST 2023 — Christ University</h3>
             <p class="mt-2 text-sm text-neutral-300">Presented paper on YOLO‑based social distancing & face mask detection; publication pending.</p>
           </article>
           <article class="card">
-            <h3 class="text-sm font-semibold text-white">Courses</h3>
+            <h3 class="text-base font-semibold text-white">Courses</h3>
             <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-neutral-300">
               <li>Master Certificate in AR/VR — Monolith Research & Training Labs</li>
               <li>Operating Systems and You: Becoming a Power User</li>
@@ -257,7 +257,7 @@
         <h2 id="contact-heading">Contact</h2>
         <div class="mt-4 grid gap-4 md:grid-cols-2">
           <div class="card">
-            <dl class="grid grid-cols-1 gap-3 text-sm">
+            <dl class="grid grid-cols-1 gap-3 text-base">
               <div class="flex items-center justify-between">
                 <dt class="text-neutral-400">Email</dt>
                 <dd><a href="mailto:raguramanriddhiman@gmail.com" class="link-muted focus-ring">raguramanriddhiman@gmail.com</a></dd>
@@ -273,8 +273,8 @@
             </dl>
           </div>
           <div class="card">
-            <h3 class="text-sm font-semibold text-white">Links</h3>
-            <ul class="mt-3 space-y-2 text-sm">
+            <h3 class="text-base font-semibold text-white">Links</h3>
+            <ul class="mt-3 space-y-2 text-base">
               <li><a href="#" class="link-muted focus-ring">LinkedIn</a></li>
               <li><a href="#" class="link-muted focus-ring">GitHub</a></li>
               <li><a href="#" class="link-muted focus-ring">Portfolio Website</a></li>
@@ -285,7 +285,7 @@
     </main>
 
     <footer class="footer">
-      <div class="mx-auto max-w-7xl px-4 py-6 text-sm text-neutral-400">
+      <div class="mx-auto max-w-[95%] px-4 py-6 text-base text-neutral-400">
         <div class="flex flex-wrap items-center justify-between gap-3">
           <span>© <span class="text-neutral-200">Riddhiman Raguraman</span></span>
           <a href="mailto:raguramanriddhiman@gmail.com" class="text-neutral-300 hover:text-white focus-ring">raguramanriddhiman@gmail.com</a>

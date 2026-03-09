@@ -13,6 +13,9 @@
 html{
   scroll-behavior:smooth;
   scroll-padding-top:4.5rem; /* mobile header height */
+  /* Fluid typography: 1rem (16px) @ 375px -> 1.5rem (24px) @ 800px+ 
+     Keeps text large on desktop/tablet, drops rapidly for mobile (Log-like) */
+  font-size: clamp(1rem, 0.5rem + 2vw, 1.5rem);
 }
 @media (min-width:768px){
   html{ scroll-padding-top:5rem; } /* slightly larger on md+ */
