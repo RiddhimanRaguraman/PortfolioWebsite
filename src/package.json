@@ -4,9 +4,9 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite --port=3000 --host=0.0.0.0",
-    "build": "vite build",
-    "preview": "vite preview",
+    "dev": "vite --root .. --port=3000 --host=0.0.0.0",
+    "build": "vite build --root ..",
+    "preview": "vite preview --root ..",
     "lint": "echo 'No linting needed for static HTML'"
   },
   "dependencies": {

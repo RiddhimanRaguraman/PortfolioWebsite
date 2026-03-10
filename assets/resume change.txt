@@ -1,0 +1,16 @@
+3d math vectors , collision primitives
+space invaders, - all the design patterns 
+a little bullet points on direct x 11, view volumd, bounding volume,  
+key frame animation, protocol buf, cs, a 2d and 3 drigid engine,
+
+add AI somewhat in skills
+
+distributed systems (networking ) put the file retreviel engines
+
+actor model multithreading  communication with with 7 threads
+
+add cuda description (worps grips, atomica instruction in gpu and cpu)
+
+
+
+cold email with something about to a company
