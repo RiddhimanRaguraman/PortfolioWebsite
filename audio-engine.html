@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Engine | Riddhiman Raguraman</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="selection:bg-blue-500/30 selection:text-blue-200">
+    <main class="max-w-[1200px] mx-auto px-6 py-20">
+        <a href="index.html" class="fixed top-8 left-8 p-3 rounded-full bg-white/5 hover:bg-white/10 text-slate-400 hover:text-white transition-colors z-50 border border-white/5">
+            <i data-lucide="arrow-left" class="w-6 h-6"></i>
+        </a>
+
+        <div class="mb-16">
+            <span class="text-sm font-mono text-blue-500 uppercase tracking-widest">C++ / Multithreading</span>
+            <h1 class="text-4xl md:text-7xl font-bold text-white mt-4 tracking-tight font-display">Audio Engine</h1>
+            <div class="flex flex-wrap gap-2 mt-6">
+                <span class="text-[10px] font-mono px-3 py-1.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 uppercase tracking-wider">C++</span>
+                <span class="text-[10px] font-mono px-3 py-1.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 uppercase tracking-wider">Multithreading</span>
+                <span class="text-[10px] font-mono px-3 py-1.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 uppercase tracking-wider">RAII</span>
+                <span class="text-[10px] font-mono px-3 py-1.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 uppercase tracking-wider">Producer-Consumer</span>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+            <div class="lg:col-span-8 space-y-16">
+                <section>
+                    <h2 class="text-sm font-mono text-blue-500 uppercase tracking-widest mb-6 flex items-center gap-2">
+                        <div class="w-2 h-2 bg-blue-500 rounded-full"></div> Overview
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed text-xl">
+                        Engineered a real-time audio system to seamlessly stitch and play 23 raw WAVE files without artifacts. Designed a high-performance architecture to decouple file I/O from audio rendering for glitch-free playback.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-sm font-mono text-blue-500 uppercase tracking-widest mb-6 flex items-center gap-2">
+                        <div class="w-2 h-2 bg-blue-500 rounded-full"></div> Technical Implementation
+                    </h2>
+                    <div class="grid grid-cols-1 gap-8">
+                        <div class="p-8 rounded-2xl glass border-white/5">
+                            <h3 class="text-xl font-bold text-white mb-4">25-Thread Architecture</h3>
+                            <p class="text-slate-400 mb-4 leading-relaxed">Designed a sophisticated 25-thread architecture to decouple file I/O from audio rendering, ensuring zero-latency audio playback even under heavy load.</p>
+                        </div>
+                        <div class="p-8 rounded-2xl glass border-white/5">
+                            <h3 class="text-xl font-bold text-white mb-4">Producer–Consumer Model</h3>
+                            <p class="text-slate-400 mb-4 leading-relaxed">Implemented a double-buffered Producer–Consumer model with circular queues for efficient inter-thread communication.</p>
+                        </div>
+                        <div class="p-8 rounded-2xl glass border-white/5">
+                            <h3 class="text-xl font-bold text-white mb-4">Safe Synchronization</h3>
+                            <p class="text-slate-400 mb-4 leading-relaxed">Utilized mutexes and condition variables for safe thread synchronization (no spinlocks), ensuring robust resource management.</p>
+                        </div>
+                        <div class="p-8 rounded-2xl glass border-white/5">
+                            <h3 class="text-xl font-bold text-white mb-4">Resource Management</h3>
+                            <p class="text-slate-400 mb-4 leading-relaxed">Applied RAII for robust resource and thread lifecycle management under real-time constraints.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+            <div class="lg:col-span-4 space-y-10">
+                <div class="sticky top-32">
+                    <h2 class="text-sm font-mono text-blue-500 uppercase tracking-widest mb-6">Demo Video</h2>
+                    <div class="group block relative aspect-video rounded-2xl overflow-hidden bg-slate-800 border border-white/10 blue-shadow">
+                        <img src="https://picsum.photos/seed/audio/800/450" alt="Demo Preview" class="w-full h-full object-cover opacity-50">
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <div class="p-4 rounded-full bg-blue-500 text-white shadow-xl shadow-blue-500/20">
+                                <i data-lucide="play-circle" class="w-8 h-8"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>

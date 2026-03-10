@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Malloc & Free | Riddhiman Raguraman</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="selection:bg-blue-500/30 selection:text-blue-200">
+    <main class="max-w-[1200px] mx-auto px-6 py-20">
+        <a href="index.html" class="fixed top-8 left-8 p-3 rounded-full bg-white/5 hover:bg-white/10 text-slate-400 hover:text-white transition-colors z-50 border border-white/5">
+            <i data-lucide="arrow-left" class="w-6 h-6"></i>
+        </a>
+
+        <div class="mb-16">
+            <span class="text-sm font-mono text-blue-500 uppercase tracking-widest">C++ / Memory Management</span>
+            <h1 class="text-4xl md:text-7xl font-bold text-white mt-4 tracking-tight font-display">Custom Malloc & Free</h1>
+            <div class="flex flex-wrap gap-2 mt-6">
+                <span class="text-[10px] font-mono px-3 py-1.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 uppercase tracking-wider">C++</span>
+                <span class="text-[10px] font-mono px-3 py-1.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 uppercase tracking-wider">Low-level</span>
+                <span class="text-[10px] font-mono px-3 py-1.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20 uppercase tracking-wider">Performance</span>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+            <div class="lg:col-span-8 space-y-16">
+                <section>
+                    <h2 class="text-sm font-mono text-blue-500 uppercase tracking-widest mb-6 flex items-center gap-2">
+                        <div class="w-2 h-2 bg-blue-500 rounded-full"></div> Overview
+                    </h2>
+                    <p class="text-slate-300 leading-relaxed text-xl">
+                        Designed and implemented a custom memory allocation and deallocation framework for performance-critical applications. This project focuses on low-level system-level memory management with a tight integration into C++.
+                    </p>
+                </section>
+
+                <section>
+                    <h2 class="text-sm font-mono text-blue-500 uppercase tracking-widest mb-6 flex items-center gap-2">
+                        <div class="w-2 h-2 bg-blue-500 rounded-full"></div> Technical Highlights
+                    </h2>
+                    <div class="grid grid-cols-1 gap-8">
+                        <div class="p-8 rounded-2xl glass border-white/5">
+                            <h3 class="text-xl font-bold text-white mb-4">Performance Optimization</h3>
+                            <p class="text-slate-400 mb-4 leading-relaxed">Achieved <span class="text-white">~2× faster performance</span> compared to MSVC’s default allocator by optimizing memory layout and reducing fragmentation.</p>
+                        </div>
+                        <div class="p-8 rounded-2xl glass border-white/5">
+                            <h3 class="text-xl font-bold text-white mb-4">System Integration</h3>
+                            <p class="text-slate-400 mb-4 leading-relaxed">Integrated tightly with C++ for low-level, system-level memory management, providing a robust and efficient alternative to standard allocation methods.</p>
+                        </div>
+                        <div class="p-8 rounded-2xl glass border-white/5">
+                            <h3 class="text-xl font-bold text-white mb-4">Allocation Strategies</h3>
+                            <p class="text-slate-400 mb-4 leading-relaxed">Implemented custom strategies for memory pooling and block management to minimize overhead and maximize throughput.</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+            <div class="lg:col-span-4 space-y-10">
+                <div class="sticky top-32 p-8 rounded-3xl glass border-blue-500/20 blue-shadow">
+                    <h2 class="text-sm font-mono text-blue-500 uppercase tracking-widest mb-6">Project Info</h2>
+                    <div class="space-y-4 text-sm">
+                        <div class="flex justify-between">
+                            <span class="text-slate-500">Platform</span>
+                            <span class="text-white">Windows Console</span>
+                        </div>
+                        <div class="flex justify-between">
+                            <span class="text-slate-500">Language</span>
+                            <span class="text-white">C++</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
